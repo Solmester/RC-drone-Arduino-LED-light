@@ -1,4 +1,4 @@
-void setup(){
+void setup(){ //Start the pins
   pinMode(4, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode(11, OUTPUT);
@@ -8,7 +8,7 @@ void setup(){
 }
 
 void loop(){
-  if(digitalRead(8) == HIGH){
+  if(digitalRead(8) == HIGH){ // if the input on pin 8 is high, send high output on pin 12, 11, 10, 9.
     digitalWrite(12, HIGH);
     digitalWrite(11, HIGH);
     digitalWrite(10, HIGH);
@@ -20,6 +20,6 @@ void loop(){
     digitalWrite(10, LOW);
     digitalWrite(9, LOW);
   }
-  digitalWrite(4,HIGH);
+  digitalWrite(4,HIGH); //Use this to power on the RC Reciver
 
 }
